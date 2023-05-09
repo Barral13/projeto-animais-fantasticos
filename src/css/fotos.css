@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+   width: 150px;
+   height: auto; 
+}
+
+fieldset {
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border: none;
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color:antiquewhite ;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+}
+
+.sinopse {
+    display: flex;
+    justify-content:center;
+    width: 90%;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    margin-left: 5em;
+    gap: 20px;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    color:antiquewhite;
+}
+
+h2 {
+    padding-top: 35px;
+}
+
+.actor-cards-container {
+    color:antiquewhite;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    width: 90%;
+    font-size: 30px;
+    margin-left: 3em;
+    padding-top: 20px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-left: 5.5em;
+}
+
+.img {
+    width: 50%;
+    height: 200px;
+    padding: 6em;
+    cursor: pointer;
+    transition: 1s;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.img:hover {
+    transform: scale(1.02);
+}
+
+.card-1 {
+    background-image: url('https://i.pinimg.com/564x/e4/26/6e/e4266e1b43d31da874cf084af97b08bd.jpg');
+}
+
+.card-2 {
+    background-image: url('https://i.pinimg.com/564x/f7/09/3c/f7093c007f0f0b16507c7b6a515bee64.jpg');
+}
+
+.card-3 {
+    background-image: url('https://i.pinimg.com/564x/ae/72/e2/ae72e2d9a9ec80359e1cf1b37cc78ddc.jpg');
+}
+
+.card-4 {
+    background-image: url('https://i.pinimg.com/564x/5b/ec/02/5bec0250ee8e76d9fb79f3cd20338776.jpg');
+}
+
+.card-5 {
+    background-image: url('https://i.pinimg.com/564x/39/46/23/394623acc39f6df9ee69765d6215f9bc.jpg');
+}
+
+.card-6 {
+    background-image: url('https://i.pinimg.com/564x/31/e2/32/31e232e99583226a501d0051a4be4c3b.jpg');
+}
+
+.card-7 {
+    background-image: url('https://i.pinimg.com/564x/ac/df/71/acdf7186d92b5382741d710caeedcb25.jpg');
+}
+
+.card-8 {
+    background-image: url('https://i.pinimg.com/564x/8f/23/96/8f2396f9cc55329459921b8ce301ef26.jpg');
+}
+
+.card-9 {
+    background-image: url('https://i.pinimg.com/564x/92/00/a6/9200a645b61e07e3071800799fd473a4.jpg');
+}
+
+.card-10 {
+    background-image: url('https://i.pinimg.com/564x/a6/28/97/a62897ea68e464807a17d23257bbf78c.jpg');
+}
+
+.beats-cards-container {
+    color:antiquewhite;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+    width: 90%;
+    font-size: 30px;
+    margin-left: 3em;
+    padding-top: 20px;
+}
+
+.beats-cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-left: 5.5em;
+}
+
+.cards {
+    width: 50%;
+    height: 200px;
+    padding: 6em;
+    cursor: pointer;
+    transition: 1s;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.cards:hover {
+    transform:scale(1.02);
+}
+
+.criatura-1{
+    background-image: url('https://i.pinimg.com/564x/18/e8/53/18e853dd46c96d57edb1f524ea8ef9ed.jpg');
+}
+.criatura-2{
+    background-image: url('https://i.pinimg.com/564x/77/d4/ab/77d4abbb28aa02dc2b61bf1dd8bdcb03.jpg');
+}
+.criatura-3{
+    background-image: url('https://cdn.ome.lt/6Qrennm3CC70l-QV4dcgfykiNsg=/770x0/smart/uploads/conteudo/fotos/tronquilho.jpg');
+}
+.criatura-4{
+    background-image: url('https://i.pinimg.com/564x/da/d0/f7/dad0f73e7754a88f6ae5af8fa50a1ade.jpg');
+}
+.criatura-5{
+    background-image: url('https://pm1.narvii.com/6481/fc18d339c3e4de02ce2af74686979230c1cfe8fd_hq.jpg');
+}
+.criatura-6{
+    background-image: url('https://mortesubita.net/wp-content/uploads/2020/08/Thunderbird_concept_art.jpg');
+}
+.criatura-7{
+    background-image: url('https://i.pinimg.com/564x/92/eb/4a/92eb4a3a90acf05d1e0aa0161855acac.jpg');
+}
+
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color:antiquewhite;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1280px) {
+    .footer-navigation {
+        display: block;
+        margin-left: 150px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-left: 140px;
+    }
+
+    .sinopse {
+        width: 80%;
+        display: grid;
+        flex-direction: column;
+        padding-left: 50px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+        width: 70%;
+        padding-left: 50px;
+    }
+
+    .beats-cards {
+            grid-template-columns: 1fr;
+            margin-top: 5px;
+            width: 70%;
+            padding-left: 50px;
+        }
+
+        .beats-cards-container{
+            padding-left: 50px;
+        }
+
+        .actor-cards-container {
+            padding-left: 50px;
+        }
+    } 
+
+    footer {
+        padding-top: 50px;
+    }
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+        margin-left: 150px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-left: 30px;
+    }
+
+    .sinopse {
+        width: 80%;
+        display: grid;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 5px;
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    .beats-cards {
+            grid-template-columns: 1fr;
+            margin-top: 5px;
+            padding-left: 10px;
+        }
+
+        .beats-cards-container{
+            padding-left: 10px;
+        }
+
+        .actor-cards-container {
+            padding-left: 10px;
+        }
+    } 
+
+    footer {
+        padding-top: 50px;
+    }
+
+    @media(max-width: 480px) {
+        body {
+            width: 400px;
+        }
+
+        .footer-navigation {
+            display: block;
+        }
+    
+        nav {
+            display: none;
+        }
+    
+        h1 {
+            font-size: 30px;
+            padding-left: 100px;
+        }
+
+        #informacoes {
+            margin-right: 70px;
+        }
+    
+        .sinopse {
+            width: 80%;
+            display: grid;
+            flex-direction: column;
+
+        }
+    
+        .cards-content {
+            grid-template-columns: 1fr;
+            margin-top: 5px;
+            width: 70%;
+        }
+    
+        .beats-cards {
+                grid-template-columns: 1fr;
+                margin-top: 5px;
+            }
+        } 
+    
+        footer {
+            padding-top: 50px;
+        }
+    

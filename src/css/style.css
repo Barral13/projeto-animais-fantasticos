@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+   width: 150px;
+   height: auto; 
+}
+
+fieldset {
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border: none;
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#banner {
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEjZ6eXHXJmknqtc953z1U1GXF5fl18SpQRlBtP_qQ06D-rt6esT4Ejle3Y6XTT4bjdkl7oKPCIp35lR64Nv3fY3be0iU8NJnHE8JxeRIMuWb7_8awhFMZwJ9J_zrp_u5mHp4EC5ztyJN1R_nM7IrsapbynYtEpeoO81Wxxerf-fY-ltVRIu2phbIFw=s16000');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-left: 90px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://i.pinimg.com/564x/c1/e7/1a/c1e71ae1e9f33f8c781fe236cd531c4b.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/564x/66/f6/e4/66f6e47ffff705dcd5aa9398289a7d45.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://i.pinimg.com/564x/50/7a/24/507a24052d9262a761fb74a04454044e.jpg');
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 1280px){
+    .footer-navigation {
+        display: block;
+        margin-left: 250px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        height: 300px;
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        padding-top: 50px;
+        width: 70%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10em;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 80%;
+    }
+
+    #sinopse {
+        width: 90%;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 50%;
+        margin-left: 9em;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        width: 60%;
+        margin-left: 12em;
+    }
+}    
+
+@media(max-width: 768px){
+
+    .footer-navigation {
+        display: block;
+        margin-left: 200px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        width: 800px;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 70%;
+    }
+
+    #sinopse {
+        width: 60%;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        width: 75%;
+        margin-left: 95px;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    body {
+        width: 800px;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        width: 800px;
+    }
+
+    #trailer-container {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 90%;
+    }
+
+    #sinopse {
+        width: 90%;;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: auto;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        width: 75%;
+    }
+
+}

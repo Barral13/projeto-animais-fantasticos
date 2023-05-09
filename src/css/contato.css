@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('https://1.bp.blogspot.com/-OzZf0nbRzus/XmFDpqbRZTI/AAAAAAAABqY/pJLLCT58k7waNMybWG40ow6Iwym9qC_2QCLcBGAsYHQ/s1600/animaisfantasticos.jpg');
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+header {
+    background-color: #000;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+   width: 150px;
+   height: auto; 
+}
+
+fieldset {
+    color:aliceblue;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border: none;
+    height: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.sec-form {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 100%;
+    color:aliceblue;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    padding-top: 33px;
+}
+
+.informacoes {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+label {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 22px;
+    height: 25px;
+    border: none;
+    outline: none;
+    width: 350px;
+}
+
+#nome-sobrenome-email {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 350px;
+    height: 25px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+textarea {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-radius: 2%;
+    margin-top: 10px;
+    width: 350px;
+    border: none;
+    outline: none;
+}
+
+#textarea {
+    margin-top: 25px;
+}
+
+.button {
+    width: 150px;
+    height: 35px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    background-color: #000;
+    height: 140px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+
+    body {
+        background-image: none;
+        background-color: #000;
+    }
+
+    .footer-navigation {
+        display: block;
+        margin-left: 70px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .sec-form {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button {
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    footer {
+        padding-top: 40px;
+        height: 100%;
+    }
+}
