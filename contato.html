@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Contato</title>
+    <link rel="stylesheet" href="./src/css/contato.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="./src/imagens/logo.jpg" />
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <fieldset>
+        <h1>Formulário de Contato</h1>
+        <p>Complete as informações</p>
+        <br>
+    </fieldset>
+
+    <form class="sec-form" action="./contato.html">
+        <div class="informacoes">
+            <label for="nome" id="nome">Nome</label>
+            <input type="text" name="nome" id="nome-sobrenome-email" required>
+
+            <label for="sobrenome" id="sobrenome">Sobrenome</label>
+            <input type="text" name="nome" id="nome-sobrenome-email" required>
+
+            <label for="emails">Email</label>
+            <input type="email" name="email" id="nome-sobrenome-email" required placeholder="Insira um email valido">
+
+            <label for="assunto">Qual assunto deseja tratar</label>
+            <label for="critica">
+            <input type="radio" name="check" value="critica" checked>
+            Fazer uma critica</label>
+            <label for="elogio">
+            <input type="radio" name="check" value="elogio">
+            Fazer um elogio</label>
+            <label for="outro">
+            <input type="radio" name="check" value="outro">
+            Assunto não listado
+            </label>
+        
+            <label for="text" id="textarea">Digite aqui sua mensagem!</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea>
+
+            <button class="button">Enviar</button>
+
+        </div>
+    </form>
+
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./src/imagens/logo.jpg">
+        <span>Todos os direitos reservados ©</span>
+        <span>Desenvolvido por: Dhanglerson Barral</span>
+
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+</html>
